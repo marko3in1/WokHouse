@@ -1,0 +1,185 @@
+body {
+  margin: 0px;
+  font-family: "Ubuntu";
+}
+
+/*
+paleta:
+#0b0c10 - crna
+#1f2833 - tamno siva
+#c5c6c7 - siva
+#66fcf1 - svetlo plava
+#45a29e - tamnija plava
+*/
+
+.logo {
+  display: block;
+  margin: auto;
+  width: 20vh;
+}
+
+.logo > img {
+  width: 20vh;
+  height: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.section {
+  padding: 70px 0;
+}
+
+.cardContainer {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template: 1fr / repeat(3, 1fr);
+  grid-gap: 25px;
+}
+
+.card {
+  position: relative;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: 5vh;
+}
+
+.cardImage {
+  position: absolute;
+  max-width: 130%;
+  left: -15%;
+  right: 0;
+  margin: 0 auto;
+  top: -18%;
+  z-index: 2;
+  transition: all 0.3s ease-out;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.3));
+}
+
+.cardData {
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #ededed;
+  padding-top: calc(100% * 1.18);
+  transition: all 0.3s ease-out 0.1s;
+}
+
+.cardInfo {
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+.cardInfo h2 {
+  font-size: 14px;
+  font-weight: 800;
+}
+.cardInfo p {
+  font-size: 10px;
+  line-height: 14px;
+  color: #a2a2a2;
+}
+.cardPrice {
+  height: 30px;
+  padding: 0 10px 0 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+}
+.card:hover .cardImage {
+  top: -20%;
+}
+.card:hover .cardData {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.foodImage {
+  background-color: black;
+  position: relative;
+}
+
+.foodImage > p {
+  position: absolute;
+  left: 1%;
+  right: 1%;
+  top: 40%;
+  margin: auto;
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  z-index: 2;
+  color: white;
+}
+
+.foodImage > img {
+  opacity: 0.5;
+  object-fit: cover;
+  width: 100%;
+  height: 40vh;
+}
+
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3vh;
+  height: 100%;
+}
+
+.navbar {
+  margin-top: -3vh;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  font-size: 0;
+}
+
+.navbar a {
+  font-size: 1rem;
+  display: inline-block;
+  background-color: white;
+  color: black;
+  padding: 1vh;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navbar > a:hover {
+  border-bottom: 2px solid #c5c6c7;
+}
+
+.active {
+  border-bottom: 2px solid #1f2833;
+}
+
+.active:hover {
+  border-bottom: 2px solid #1f2833 !important;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 10px;
+  text-align: center;
+}
+
+.aboutCompanyTitle {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 800;
+}

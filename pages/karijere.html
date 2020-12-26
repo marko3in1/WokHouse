@@ -2,6 +2,12 @@
 <html>
   <head>
     <link rel="stylesheet" href="../styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
     <script src="../scripts.js"></script>
   </head>
   <body>
@@ -10,7 +16,7 @@
       <img src="../logo.png" alt="Wok House" />
     </div>
     <div class="container">
-      <div class="navbar">
+      <div class="navigation">
         <a href="../index.html">Pocetna Strana</a>
         <a href="oKompaniji.html">O kompaniji</a>
         <a href="proizvodi.html">Proizvodi</a>
@@ -19,6 +25,69 @@
         <a href="kontakt.html">Kontakt</a>
         <a href="demo.html">Demo</a>
       </div>
+
+      <div class="konkurs">
+        <h2>Želite biti deo našeg tima?</h2>
+      </div>
+      <div>
+        <form name="myForm" onsubmit="return validate()">
+          <div class="form-row">
+            <div class="col">
+              <p>Unesite Ime*</p>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Ime"
+                id="Name"
+                onkeypress="return (event.charCode > 64 && 
+	event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"
+              />
+            </div>
+            <div class="col">
+              <p>Unesite Prezime*</p>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Prezime"
+                id="LastName"
+                onkeypress="return (event.charCode > 64 && 
+	event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1"
+              >Unesite Vaše Zanimanje*</label
+            >
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option selected></option>
+              <option>Kuvar</option>
+              <option>Konobar</option>
+              <option>Marketing Executive</option>
+              <option>Dostavljač hrane (Vožač)</option>
+              <option>Dizajner</option>
+              <option>Drugo</option>
+            </select>
+          </div>
+          <div class="uploadFile">
+            <p>Uploadujte Vaš CV</p>
+            <input
+              type="file"
+              class="custom-file-input"
+              id="customFile"
+              required
+            />
+            <label class="custom-file-label" for="customFile"></label>
+          </div>
+          <button type="submit" class="btn btn-primary">Pošalji</button>
+        </form>
+      </div>
     </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

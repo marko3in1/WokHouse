@@ -2,6 +2,12 @@
 <html>
   <head>
     <link rel="stylesheet" href="../styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
     <script src="../scripts.js"></script>
   </head>
   <body>
@@ -11,7 +17,7 @@
         <img src="../logo.png" alt="Wok House" />
       </div>
       </a>
-      <div class="navbar">
+      <div class="navigation">
         <a href="../index.html">Pocetna Strana</a>
         <a href="oKompaniji.html">O kompaniji</a>
         <a class="active" href="proizvodi.html">Proizvodi</a>
@@ -21,72 +27,219 @@
         <a href="demo.html">Demo</a>
       </div>
 
+      <div class="products">
+        <h2>Naši proizvodi</h2>
+      </div>
+
       <section class="section">
         <div class="cardContainer">
           <div class="grid">
-            <article class="card">
+            <!--PRVI OBROK-->
+            <article class="card" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#meal1">
               <img class="cardImage" src="../servedFood/prva.png" />
               <div class="cardData">
                 <div class="cardInfo">
-                  <h2>Nombre Comida</h2>
-                  <p>Descripcion de la comida, con ingredientes</p>
+                  <p>Kliknite ovde za više informacija</p>
+                  <h2 class="cardPrice">350.00 RSD</h2>
                 </div>
-                <h3 class="cardPrice">$7.50</h3>
+                <h5>Fat Dragon</h5>
               </div>
             </article>
-            <article class="card">
+            <!--DRUGI OBROK-->
+            <article class="card" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#meal2">
               <img class="cardImage" src="../servedFood/druga.png" />
               <div class="cardData">
                 <div class="cardInfo">
-                  <h2>Nombre Comida</h2>
-                  <p>Descripcion de la comida, con ingredientes</p>
+                  <p>Kliknite ovde za više informacija</p>
+                <h2 class="cardPrice">400.00 RSD</h3>
                 </div>
-                <h3 class="cardPrice">$7.50</h3>
+                <h5>Specijalitet Kuće</h2>
+
               </div>
             </article>
-            <article class="card">
+            <!--TRECI OBROK-->
+            <article class="card" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#meal3">
               <img class="cardImage" src="../servedFood/treca.png" />
               <div class="cardData">
                 <div class="cardInfo">
-                  <h2>Nombre Comida</h2>
-                  <p>Descripcion de la comida, con ingredientes</p>
+                  <p>Kliknite ovde za više informacija</p>
+                <h2 class="cardPrice">380.00 RSD</h3>
                 </div>
-                <h3 class="cardPrice">$7.50</h3>
+                <h5>Specijalitet Kuće</h5>
               </div>
             </article>
-            <article class="card">
+            <!--CETVRTI OBROK-->
+            <article class="card" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#meal4">
               <img class="cardImage" src="../servedFood/cetvrti.png" />
               <div class="cardData">
                 <div class="cardInfo">
-                  <h2>Nombre Comida</h2>
-                  <p>Descripcion de la comida, con ingredientes</p>
+                  <p>Kliknite ovde za više informacija</p>
+                <h2 class="cardPrice">420.00 RSD</h2>
                 </div>
-                <h3 class="cardPrice">$7.50</h3>
+                <h5>Chicken Chop Suey</h5>
               </div>
             </article>
-            <article class="card">
+            <!--PETI OBROK-->
+            <article class="card" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#meal5">
               <img class="cardImage" src="../servedFood/peta.png" />
               <div class="cardData">
                 <div class="cardInfo">
-                  <h2>Nombre Comida</h2>
-                  <p>Descripcion de la comida, con ingredientes</p>
+                  <p>Kliknite ovde za više informacija</p>
+                <h2 class="cardPrice">300.00 RSD</h2>
                 </div>
-                <h3 class="cardPrice">$7.50</h3>
+                <h5>Szechuan Chicken</h5>
               </div>
             </article>
-            <article class="card">
+            <article class="card" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#meal6">
               <img class="cardImage" src="../servedFood/sesta.png" />
               <div class="cardData">
                 <div class="cardInfo">
-                  <h2>Nombre Comida</h2>
-                  <p>Descripcion de la comida, con ingredientes</p>
+                  <p>Kliknite ovde za više informacija
+                <h2 class="cardPrice">450.00 RSD</h2>
+                  </p>
                 </div>
-                <h3 class="cardPrice">$7.50</h3>
+                <h5>Shangai Fried Noodles</h5>
               </div>
             </article>
           </div>
         </div>
       </section>
     </div>
+
+
+<!-- Modal za prvo jelo -->
+<div class="modal fade" id="meal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sastojci</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img class="modalImage" src="../servedFood/prva.png" alt="">
+        <ul>
+        <li>Goveđe meso</li>
+        <li>Pečurke</li>
+        <li>Pirinač</li>
+        <li>Dinstani Bok Čoj</li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal za drugo jelo -->
+<div class="modal fade" id="meal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sastojci</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img class="modalImage" src="../servedFood/druga.png" alt="">
+        <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal za trece jelo -->
+<div class="modal fade" id="meal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sastojci</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img class="modalImage" src="../servedFood/treca.png" alt="">
+        <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal za cetvrto jelo -->
+<div class="modal fade" id="meal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sastojci</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+    <div class="modal-body">
+        <img class="modalImage" src="../servedFood/cetvrti.png" alt="">
+        <ul>
+        <li>Piletina</li>
+        <li>Kukuruz</li>
+        <li>Luk</li>
+        <li>Pečurke</li>
+        <li>Šargarepa</li>
+        <li>Celer</li>
+        <li>Bok Čoj</li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal za peto jelo -->
+<div class="modal fade" id="meal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sastojci</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img class="modalImage" src="../servedFood/peta.png" alt="">
+        <ul>
+        <li>Piletina</li>
+        <li>Kukuruz</li>
+        <li>Crvena i zelena paprika</li>
+        <li>Luk</li>
+        <li>Čili</li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal za sesto jelo -->
+<div class="modal fade" id="meal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sastojci</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img class="modalImage" src="../servedFood/sesta.png" alt="">
+      <ul>
+        <li>Svinjsko meso</li>
+        <li>Kukuruz</li>
+        <li>Pečurke</li>
+        <li>Nudle</li>
+        <li>Bok Čoj</li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
   </body>
 </html>

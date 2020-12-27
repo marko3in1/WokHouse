@@ -33,34 +33,32 @@
         <form name="myForm" onsubmit="return validate()">
           <div class="form-row">
             <div class="col">
-              <p>Unesite Ime*</p>
+              <div class="team"><p>Unesite Ime*</p></div>
               <input
                 type="text"
                 class="form-control"
                 placeholder="Ime"
                 id="Name"
-                onkeypress="return (event.charCode > 64 && 
-	event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"
               />
             </div>
             <div class="col">
-              <p>Unesite Prezime*</p>
+              <div class="team"><p>Unesite Prezime*</p></div>
               <input
                 type="text"
                 class="form-control"
                 placeholder="Prezime"
                 id="LastName"
-                onkeypress="return (event.charCode > 64 && 
-	event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"
               />
             </div>
           </div>
           <div class="form-group">
-            <label for="exampleFormControlSelect1"
-              >Unesite Vaše Zanimanje*</label
-            >
+            <div class="team">
+              <label for="exampleFormControlSelect1"
+                ><p>Unesite Vaše Zanimanje*</p>
+              </label>
+            </div>
             <select class="form-control" id="exampleFormControlSelect1">
-              <option selected></option>
+              <option selected>Zanimanje</option>
               <option>Kuvar</option>
               <option>Konobar</option>
               <option>Marketing Executive</option>
@@ -70,16 +68,20 @@
             </select>
           </div>
           <div class="uploadFile">
-            <p>Uploadujte Vaš CV</p>
+              <div class="ulevo">
+                <p>Uploadujte Vaš CV</p>
+            </div>
             <input
               type="file"
               class="custom-file-input"
               id="customFile"
               required
             />
+          </div>
+
             <label class="custom-file-label" for="customFile"></label>
           </div>
-          <button type="submit" class="btn btn-primary">Pošalji</button>
+          <button type="submit" class="btn btn-primary2">Pošalji</button>
         </form>
       </div>
     </div>

@@ -3,15 +3,6 @@ body {
   height: 100%;
 }
 
-/*
-paleta:
-#0b0c10 - crna
-#1f2833 - tamno siva
-#c5c6c7 - siva
-#66fcf1 - svetlo plava
-#45a29e - tamnija plava
-*/
-
 .logo {
   display: block;
   margin: auto;
@@ -54,13 +45,20 @@ p {
   border: unset !important;
 }
 
+#map {
+  height: 500px;
+  /* The height is 400 pixels */
+  width: 70%;
+  /* The width is the width of the web page */
+}
+
 .cardImage {
   position: absolute;
   max-width: 130%;
   left: -15%;
   right: 0;
   margin: 0 auto;
-  top: -18%;
+  top: -19%;
   z-index: 2;
   transition: all 0.3s ease-out;
   filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.3));
@@ -87,12 +85,19 @@ p {
 .konkurs {
   text-align: center;
   margin-top: 2rem;
+  margin-bottom: 3vh;
 }
 
 .form-control {
   width: 30% !important;
   margin: 0 auto;
-  margin-bottom: 5px;
+  margin-top: -2px;
+}
+
+.form-control2 {
+  width: 30% !important;
+  margin: 0 auto;
+  margin-top: -2px;
 }
 
 .uploadFile {
@@ -114,6 +119,7 @@ p {
   padding-top: calc(100% * 1.18);
   transition: all 0.3s ease-out 0.1s;
   height: 31vh;
+  width: 140px;
 }
 
 .cardData h5 {
@@ -127,7 +133,7 @@ p {
   left: -15%;
   right: 0;
   margin: 0 auto;
-  top: 25%;
+  top: 23%;
   z-index: 2;
   transition: all 0.3s ease-out;
   filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.3));
@@ -158,7 +164,7 @@ p {
   align-items: center;
   font-weight: 800;
   position: absolute;
-  bottom: 1%;
+  bottom: 0.5vh;
 }
 .card:hover .cardImage {
   top: -20%;
@@ -238,6 +244,7 @@ p {
 
 .row {
   display: flex;
+  margin-top: 3vh;
 }
 
 .column {
@@ -249,7 +256,25 @@ p {
 .col > p {
   position: relative;
   margin-left: 35%;
-  margin-bottom: 5px;
+  margin-bottom: 0vh;
+}
+
+.team {
+  position: relative;
+  margin-left: 35%;
+  margin-bottom: -2vh;
+  margin-top: 2.3vh;
+}
+
+.ulevo {
+  position: relative;
+  margin-bottom: -2vh;
+  margin-top: 2.3vh;
+}
+
+.custom-file-input {
+  position: relative;
+  margin-top: 0.2em;
 }
 
 .aboutCompanyTitle {
@@ -262,15 +287,56 @@ p {
 .form-group > label {
   position: relative;
   margin-left: 35%;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.form-group2 {
+  position: relative;
+  bottom: 3vh;
+}
+
+.form-group2 > p {
+  position: relative;
+  top: -3vh;
+}
+
+.contactIcons {
+  position: relative;
+  margin-top: 3vh;
+  margin-left: 35%;
+}
+
+.contactIcons > p {
+  position: relative;
+  margin-left: 2vw;
+  margin-top: -23px;
 }
 
 .btn-primary {
   position: relative;
   margin-left: 35%;
-  margin-top: 1em;
+  margin-top: -1em;
   background-color: black !important;
 }
 
+.btn-primary2 {
+  position: relative;
+  margin-left: 37%;
+  margin-top: -10px;
+  background-color: black !important;
+  color: white !important;
+}
+
+.lokacija {
+  position: relative;
+  margin-left: 23.3vw;
+  margin-top: 2vh;
+}
+
+.lokacija > h2 {
+  margin-bottom: 3vh;
+}
 .fa {
   padding: 10px;
   font-size: 30px;

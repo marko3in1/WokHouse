@@ -11,7 +11,7 @@ function validate() {
 
   // VALIDACIJA ZA IME
   if (name == "" || name == null || name.includes(" ")) {
-    alert('Polje "Ime" mora biti popunjeno.');
+    alert("Neispravan unos imena.");
     document.getElementById("Name").focus();
     return false;
   }
@@ -25,7 +25,7 @@ function validate() {
   // VALIDACIJA ZA PREZIME
 
   if (lastName == "" || lastName == null || lastName.includes(" ")) {
-    alert('Polje "Prezime" mora biti popunjeno.');
+    alert("Neispravan unos prezimena.");
     document.getElementById("LastName").focus();
     return false;
   }
@@ -77,7 +77,7 @@ function validateForm() {
 
   if (!prezime.match(onlyLetters)) {
     document.getElementById("prezimeLabel").innerText =
-      "Prezime sadrži samo slova";
+      "Prezime može da sadrži samo slova";
     document.getElementById("prezime").style.borderColor = "red";
     return false;
   }

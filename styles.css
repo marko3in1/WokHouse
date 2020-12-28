@@ -52,22 +52,13 @@ p {
   /* The width is the width of the web page */
 }
 
-.cardImage {
-  position: absolute;
-  max-width: 130%;
-  left: -15%;
-  right: 0;
-  margin: 0 auto;
-  top: -19%;
-  z-index: 2;
-  transition: all 0.3s ease-out;
-  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.3));
-}
-
 .modalImage {
-  position: static;
-  max-width: 70%;
-  margin-left: 8.2vw;
+  position: relative;
+  max-width: 100%;
+  width: fit-content;
+  height: auto;
+  left: 5.5vw;
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.3));
 }
 
 .modal-body > ul {
@@ -123,17 +114,19 @@ p {
 }
 
 .cardData h5 {
+  position: relative;
   font-size: 19px;
   text-align: center;
+  margin-top: -3vh;
 }
 
 .cardImage {
   position: absolute;
-  max-width: 130%;
+  max-width: 135%;
   left: -15%;
   right: 0;
   margin: 0 auto;
-  top: 23%;
+  top: 4.4vh;
   z-index: 2;
   transition: all 0.3s ease-out;
   filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.3));
@@ -155,23 +148,28 @@ p {
   color: #a2a2a2;
   position: relative;
   text-align: center;
+  bottom: 2.5vh;
 }
 .cardPrice {
   height: 30px;
   padding: 0 10px 0 20px;
   font-size: 14px;
-  display: flex;
   align-items: center;
   font-weight: 800;
-  position: absolute;
-  bottom: 0.5vh;
+  position: relative;
+  bottom: 2.5vh;
 }
 .card:hover .cardImage {
-  top: -20%;
+  top: -25%;
 }
 .card:hover .cardData {
   transform: translateY(-5px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.jela > h5 {
+  text-align: center;
+  margin-bottom: 50vh;
 }
 
 .products {

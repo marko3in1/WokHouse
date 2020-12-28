@@ -134,7 +134,7 @@ function validateForm() {
 }
 
 function initMap() {
-  const mojaAdresa = { lat: 43.573, lng: 22.273 };
+  const mojaAdresa = { lat: 43.573732299999996, lng: 22.2736885 };
 
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 7.5,

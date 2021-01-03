@@ -146,3 +146,31 @@ function initMap() {
     map: map,
   });
 }
+
+function countDownTimer() {
+  // learn from Traversy Media
+  let days = document.querySelector(".days");
+  let launchDate = new Date("Jan 25,2021 00:00:00").getTime();
+  let interval = setInterval(() => {
+    let now = new Date().getTime();
+    let distance = ((launchDate - now) / 1000) >> 0;
+    let days = document.querySelector(".days");
+    let dayString = (distance / (24 * 60 * 60)) >> 0;
+    days.innerHTML = dayString;
+    let hours = document.querySelector(".hours");
+    let hourString = ((distance % (24 * 60 * 60)) / (60 * 60)) >> 0;
+    hours.innerHTML = hourString;
+    let minutes = document.querySelector(".minutes");
+    let minuteString = ((distance % (60 * 60)) / 60) >> 0;
+    minutes.innerHTML = minuteString;
+    let seconds = document.querySelector(".seconds");
+    let secondString = distance % 60 >> 0;
+    seconds.innerHTML = secondString;
+
+    if (distance <= 0) {
+      clearInterval(interval);
+      let information = document.querySelector(".information");
+      information.innerHTML = "Launched.";
+    }
+  }, 1000);
+}

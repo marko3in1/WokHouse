@@ -10,7 +10,7 @@
     />
     <script src="../scripts.js"></script>
   </head>
-  <body>
+  <body onload="countDownTimer()">
     <div class="logo">
       <a href="../index.html"></a>
 
@@ -25,6 +25,59 @@
         <a href="karijere.html">Karijere</a>
         <a href="kontakt.html">Kontakt</a>
         <a class="active" href="demo.html">Demo</a>
+      </div>
+
+      <div class="tajmer">
+        <section class="countdown">
+          <div class="container mt-5">
+            <p class="naslov">januarski ispitni rok - januar A</p>
+            <div class="display-1 text-center">2021</div>
+            <div class="preostalo">
+              <div class="row mt-5">
+                <div class="col-md-3">
+                  <div class="card mb-3">
+                    <div class="card-body">
+                      <div class="display-3 text-center card-title days">
+                        00
+                      </div>
+                      <p class="card-text text-center h5">Dana</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card mb-3">
+                    <div class="card-body">
+                      <div class="display-3 text-center card-title hours">
+                        00
+                      </div>
+                      <p class="card-text text-center h5">Sata</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card mb-3">
+                    <div class="card-body">
+                      <div class="display-3 text-center card-title minutes">
+                        00
+                      </div>
+                      <p class="card-text text-center h5">Minuta</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card mb-3">
+                    <div class="card-body">
+                      <div class="display-3 text-center card-title seconds">
+                        00
+                      </div>
+                      <p class="card-text text-center h5">Sekunda</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
     <script

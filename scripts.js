@@ -55,7 +55,7 @@ function validateForm() {
   let onlyLetters = /^[a-zA-Z\s]*$/;
   let onlyNumbers = /^[+]?\d+$/;
 
-  if (ime == " " || ime == null || ime.includes(" ")) {
+  if (ime == "" || ime == null || ime.includes(" ")) {
     document.getElementById("imeLabel").innerText = "Neispravan unos imena";
     document.getElementById("ime").style.borderColor = "red";
     return false;
@@ -150,7 +150,7 @@ function initMap() {
 function countDownTimer() {
   // learn from Traversy Media
   let days = document.querySelector(".days");
-  let launchDate = new Date("Jan 25,2021 00:00:00").getTime();
+  let launchDate = new Date("Jan 25,2021 09:00:00").getTime();
   let interval = setInterval(() => {
     let now = new Date().getTime();
     let distance = ((launchDate - now) / 1000) >> 0;

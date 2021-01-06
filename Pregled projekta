@@ -1,0 +1,27 @@
+Pocetna strana - carousel vodi na druge strane
+
+O kompaniji - stranica sa informacijama o kompaniji
+
+Proizvodi - 6proizovda, pozicija tanjira se pomera on hover i otkriva cenu, na klik izlazi modal sa sastojcima jela
+
+O nama - slika, github, linkedin i instagram linkovi na klik, onmouseover pokazuje smer umesto imena
+
+Karijere - forma za slanje cv-a, izlazi alert za svaku gresku
+	ime - sadrzi samo slova bez razmaka, obavezno
+	prezime - sadrzi samo slova bez razmaka, obavezno
+	zanimanje - polje mora biti popunjeno, obavezno
+	cv upload - mora se uploadovati fajl, obavezno
+	
+	
+Kontaktirajte nas - forma za kontakt
+	ime - sadrzi samo slova bez razmaka, obavezno
+	prezime - sadrzi samo slova bez razmaka, obavezno
+	naslov poruke - bilo sta, obavezno popuniti
+	broj telefona - bar 6 cifra, ako sadrzi plus mora da se nalazi
+	na pocetku broja, obavezno
+	poruka- broj, obavezno
+	
+	-moj broj telefona i mail
+	-google mapa sa lokacijom, mogucnost satelitskog pogleda kao i 	street viewa, zoom i unzoom kao i full screen
+	
+Demo - tajmer do pocetka janurskog ispitnog roka

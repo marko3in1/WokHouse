@@ -148,9 +148,8 @@ function initMap() {
 }
 
 function countDownTimer() {
-  // learn from Traversy Media
   let days = document.querySelector(".days");
-  let launchDate = new Date("Jan 25,2021 09:00:00").getTime();
+  let launchDate = new Date("Jan 26,2021 09:00:00").getTime();
   let interval = setInterval(() => {
     let now = new Date().getTime();
     let distance = ((launchDate - now) / 1000) >> 0;
